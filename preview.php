@@ -307,20 +307,39 @@
             <div class="insurance-label-block">
                 <span class="label">Pojišťovny</span>
                 <h3>Spolupracujeme se zdravotními pojišťovnami</h3>
-                <p class="insurance-note">90 % běžných ošetření hradí vaše pojišťovna.</p>
+                <p class="insurance-note" style="margin-top:.75rem; max-width:28ch;">90 % běžných ošetření hradí vaše pojišťovna. Nejste si jistí? Zavolejte — ověříme za vás.</p>
+                <a href="tel:+420725345704" class="btn btn--primary btn--sm" style="margin-top:1.25rem;">Ověřit nárok zdarma</a>
             </div>
 
-            <div style="flex:1;">
-                <div class="insurance-logos">
-                    <div class="insurance-logo-pill">🏥 VZP 111</div>
-                    <div class="insurance-logo-pill">OZP 207</div>
-                    <div class="insurance-logo-pill">VoZP 201</div>
-                    <div class="insurance-logo-pill">ČPZP 205</div>
-                    <div class="insurance-logo-pill">ZPŠ 209</div>
-                    <div class="insurance-logo-pill">RBP 213</div>
-                    <div class="insurance-logo-pill">ZPMVČR 211</div>
+            <div class="insurance-logos-grid">
+                <div class="insurance-logo-box">
+                    <div class="insurance-logo-placeholder">VZP</div>
+                    <span>111</span>
                 </div>
-                <p class="insurance-note" style="margin-top:.75rem;">Nejste si jistí? Zavolejte nám a ověříme nárok za vás.</p>
+                <div class="insurance-logo-box">
+                    <div class="insurance-logo-placeholder">OZP</div>
+                    <span>207</span>
+                </div>
+                <div class="insurance-logo-box">
+                    <div class="insurance-logo-placeholder">VoZP</div>
+                    <span>201</span>
+                </div>
+                <div class="insurance-logo-box">
+                    <div class="insurance-logo-placeholder">ČPZP</div>
+                    <span>205</span>
+                </div>
+                <div class="insurance-logo-box">
+                    <div class="insurance-logo-placeholder">ZPŠ</div>
+                    <span>209</span>
+                </div>
+                <div class="insurance-logo-box">
+                    <div class="insurance-logo-placeholder">RBP</div>
+                    <span>213</span>
+                </div>
+                <div class="insurance-logo-box">
+                    <div class="insurance-logo-placeholder" style="font-size:.75rem;">ZPMV</div>
+                    <span>211</span>
+                </div>
             </div>
 
         </div>
@@ -483,27 +502,7 @@
 </section>
 
 <!-- ============================================================
-     10. SPLÁTKY
-     ============================================================ -->
-<div class="financing-strip">
-    <div class="container">
-        <div class="financing-inner reveal">
-            <div class="financing-text">
-                <h4>Zuby na splátky</h4>
-                <p>Rozložte náklady na léčbu do bezúročných splátek. Schválení on-line, bez dokladování příjmu.</p>
-            </div>
-            <div class="financing-logos">
-                <div class="financing-logo">Essox</div>
-                <div class="financing-logo">Cofidis</div>
-                <div class="financing-logo">Twisto</div>
-            </div>
-            <a href="tel:+420725345704" class="btn btn--gold btn--sm" style="flex-shrink:0;">Zjistit více</a>
-        </div>
-    </div>
-</div>
-
-<!-- ============================================================
-     11. CTA BAND
+     10. CTA BAND
      ============================================================ -->
 <section class="cta-band">
     <div class="container container--narrow">
