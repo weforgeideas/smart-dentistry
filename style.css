@@ -1266,3 +1266,430 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .team-grid { grid-template-columns: 1fr; }
   .reviews-cta-row { flex-direction: column; }
 }
+
+/* =========================================================
+   v2 — COMPACT SERVICES CARDS
+   ========================================================= */
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.service-card {
+  background: var(--white);
+  border: 1px solid var(--gray-mid);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.service-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  border-color: transparent;
+}
+.service-card-img {
+  aspect-ratio: 4/3;
+  background: var(--gray-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .5rem;
+  font-size: .75rem;
+  color: var(--gray-label);
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+.service-card-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.service-card-img-icon { font-size: 2rem; opacity: .3; }
+.service-card-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.service-card-label {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .5rem;
+}
+.service-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: .75rem;
+  line-height: 1.2;
+}
+.service-card-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+.service-card-bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+  font-size: .85rem;
+  color: var(--gray-text);
+  line-height: 1.45;
+}
+.service-card-bullet::before {
+  content: '–';
+  color: var(--gold);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: .05rem;
+}
+.service-card-price {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 1.25rem;
+}
+.service-card-price small {
+  font-size: .8rem;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  color: var(--gray-label);
+  margin-left: .25rem;
+}
+.service-card-ctas {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.link-more {
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+.link-more:hover { color: var(--gold); }
+
+/* =========================================================
+   v2 — WHY US
+   ========================================================= */
+.why-us-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.why-us-card {
+  background: var(--white);
+  border: 1px solid var(--gray-mid);
+  border-radius: var(--radius);
+  padding: 1.75rem 1.5rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.why-us-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform var(--transition);
+}
+.why-us-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: transparent;
+}
+.why-us-card:hover::before { transform: scaleX(1); }
+.why-us-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.why-us-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: .5rem;
+}
+.why-us-text {
+  font-size: .875rem;
+  color: var(--gray-text);
+  line-height: 1.6;
+}
+
+/* =========================================================
+   v2 — PATIENT STORIES
+   ========================================================= */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.story-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.story-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.story-card-img {
+  aspect-ratio: 3/4;
+  background: var(--gray-light);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .5rem;
+  font-size: .75rem;
+  color: var(--gray-label);
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.story-card-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.story-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,8,6,.92) 0%, rgba(10,8,6,.3) 55%, transparent 100%);
+}
+.story-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+}
+.story-card-service {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: .5rem;
+  display: block;
+}
+.story-card-name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: .5rem;
+}
+.story-card-quote {
+  font-size: .82rem;
+  color: rgba(255,255,255,.7);
+  line-height: 1.55;
+  font-style: italic;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.story-card-img-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+.story-card-img-placeholder span { font-size: 2.5rem; opacity: .25; }
+
+/* =========================================================
+   v2 — INSURANCE / POJIŠŤOVNY
+   ========================================================= */
+.insurance-section {
+  padding-block: clamp(2.5rem, 6vw, 4rem);
+  background: var(--cream);
+  border-top: 1px solid var(--gray-mid);
+  border-bottom: 1px solid var(--gray-mid);
+}
+.insurance-inner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.insurance-label-block { flex-shrink: 0; }
+.insurance-label-block .label { display: block; margin-bottom: .5rem; }
+.insurance-label-block h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  line-height: 1.2;
+  max-width: 18ch;
+}
+.insurance-logos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.insurance-logo-pill {
+  background: var(--white);
+  border: 1px solid var(--gray-mid);
+  border-radius: 2rem;
+  padding: .6rem 1.2rem;
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  letter-spacing: .03em;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+.insurance-logo-pill:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.insurance-note {
+  font-size: .82rem;
+  color: var(--gray-text);
+  margin-top: .75rem;
+}
+
+/* =========================================================
+   v2 — GALLERY
+   ========================================================= */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 240px 240px;
+  gap: .75rem;
+  margin-top: 3rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.gallery-item {
+  background: var(--gray-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .4rem;
+  font-size: .7rem;
+  color: var(--gray-label);
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.gallery-item:hover .gallery-item-overlay { opacity: 1; }
+.gallery-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10,8,6,.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition);
+  font-size: 1.5rem;
+  color: white;
+}
+.gallery-item img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.gallery-item:first-child { grid-row: span 2; }
+.gallery-item-icon { font-size: 1.75rem; opacity: .3; }
+
+/* =========================================================
+   v2 — FINANCING STRIP
+   ========================================================= */
+.financing-strip {
+  background: var(--dark);
+  padding-block: 2rem;
+}
+.financing-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.financing-text h4 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: .35rem;
+}
+.financing-text p { font-size: .875rem; color: rgba(255,255,255,.55); }
+.financing-logos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.financing-logo {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius);
+  padding: .6rem 1.2rem;
+  font-size: .85rem;
+  font-weight: 700;
+  color: rgba(255,255,255,.8);
+  letter-spacing: .03em;
+}
+
+/* =========================================================
+   v2 — RESPONSIVE ADDITIONS
+   ========================================================= */
+@media (max-width: 1024px) {
+  .why-us-grid { grid-template-columns: 1fr 1fr; }
+  .services-cards { grid-template-columns: 1fr; }
+  .stories-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+  .gallery-item:first-child { grid-row: span 1; }
+}
+@media (max-width: 768px) {
+  .services-cards { grid-template-columns: 1fr; }
+  .why-us-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .stories-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .insurance-inner { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+  .financing-inner { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 480px) {
+  .why-us-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .gallery-item:first-child { grid-row: span 1; }
+}
