@@ -61,11 +61,11 @@
                 Přijímáme nové pacienty · Termín do 48 h
             </div>
             <h1 class="hero-headline">
-                Váš zubař<br>v centru<br><em>Brna.</em>
+                Vaše Dual Smile<br>Centrum<br><em>v Brně.</em>
             </h1>
             <p class="hero-sub">
-                Moderní stomatologie, dentální hygiena a profesionální bělení zubů —
-                vše na jednom místě. Flexibilní hodiny a parkování u dveří.
+                Klinika celostní zubní a estetické dentální péče.<br>
+                Zubař, dentální hygiena a profesionální bělení — vše na jednom místě.
             </p>
             <div class="hero-ctas">
                 <a href="tel:+420725345704" class="btn btn--gold btn--lg">
